@@ -1,0 +1,78 @@
+<a href="/logout">Log Out</a>
+
+<div class="jumbotron">
+
+    <h1>Welcome to the Wedding Planner @ViewBag.UserInfo.FirstName </h1>
+
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+            <tr>
+                <td>Wedding</td>
+                <td>Date of Event</td>
+                <td>Guest Count</td>
+                <td>Action</td>
+
+            </tr>
+        </thead>
+        
+        
+          @foreach(var w in @ViewBag.AllWeddings){
+          
+            <tr>
+                <td><a href="/wedding/@w.WeddingId">@w.WedderOne & @w.WedderTwo </a></td>
+                <td>@w.DateOfEvent.ToString("dd MMM yyyy")</td>
+                <td>@w.RSVPS.Count</td>
+                
+                @if(w.UserId == ViewBag.UserInfo.id){
+                    <td>
+                        <form action="delete" method="POST">
+                            <input type="hidden" name="WeddingId" value="@w.WeddingId">
+                            <button class="btn-xs btn-danger" type="submit" name="delete">Delete</button>
+                        </form>
+                    </td>
+                }
+
+                @{
+                    bool goingToWedding = false;
+
+                    foreach(var connection in w.RSVPS){
+                        if(ViewBag.UserInfo.id == connection.UserId){
+                            
+                                goingToWedding = true;
+                        
+                        }
+                    }
+
+                    if(goingToWedding == true){
+                        <td>
+                            <form action="UnrsvpToWedding" method="POST">
+                                <input type="hidden" name="WeddingId" value="@w.WeddingId">
+                                <button class="btn-xs btn-danger" type="submit" name="UNRSVP">UNRSVP</button>
+                            </form>
+                        </td>
+                    }
+                    else{
+                        <td>
+                            <form action="rsvpToWedding" method="POST">
+                                <input type="hidden" name="WeddingId" value="@w.WeddingId">
+                                <button class="btn-xs btn-success" type="submit" name="RSVP">RSVP</button>
+                            </form>
+                            
+                            
+                        </td>
+                    }
+                }
+
+          
+            
+            
+            </tr>
+        }
+    </table>
+
+
+
+    <a class="pull-right btn btn-primary" href="/newwedding">Add New Wedding</a>
+
+
+</div>

@@ -1,0 +1,36 @@
+<h1>showing Registration</h1>
+
+
+@model wedding_planner.Models.RegisterUser
+
+<div class="container col-lg-6 col-md-6 col-sm-6 col-xs-6">
+    <div class="jumbotron">
+        <h1>Register</h1>
+
+
+        <form asp-controller="Home" asp-action="register" method="post">
+            <label asp-for="FirstName"></label>
+            <input class="form-control" asp-for="FirstName" />
+            <span asp-validation-for="FirstName"></span>
+            <br>
+            <label asp-for="LastName"></label>
+            <input class="form-control" asp-for="LastName" />
+            <span asp-validation-for="LastName"></span>
+            <br>
+            <label asp-for="Email"></label>
+            <input class="form-control" asp-for="Email" />
+            <span asp-validation-for="Email"></span>
+            <br>
+            <label asp-for="Password"></label>
+            <input class="form-control" asp-for="Password" />
+            <span asp-validation-for="Password"></span>
+            <br>
+            <label asp-for="Confirm"></label>
+            <input class="form-control" asp-for="Confirm" />
+            <span asp-validation-for="Confirm"></span>
+            <br>
+            <button class="btn btn-primary" type="submit">Create New User</button>
+
+        </form>
+    </div>
+</div>

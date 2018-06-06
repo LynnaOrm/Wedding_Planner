@@ -1,0 +1,16 @@
+C:\Users\may12\Desktop\DojoAssignments\C#\Net\wedding_planner\bin\Debug\netcoreapp1.1\wedding_planner.deps.json
+C:\Users\may12\Desktop\DojoAssignments\C#\Net\wedding_planner\bin\Debug\netcoreapp1.1\wedding_planner.runtimeconfig.json
+C:\Users\may12\Desktop\DojoAssignments\C#\Net\wedding_planner\bin\Debug\netcoreapp1.1\wedding_planner.runtimeconfig.dev.json
+C:\Users\may12\Desktop\DojoAssignments\C#\Net\wedding_planner\bin\Debug\netcoreapp1.1\wedding_planner.dll
+C:\Users\may12\Desktop\DojoAssignments\C#\Net\wedding_planner\bin\Debug\netcoreapp1.1\wedding_planner.pdb
+C:\Users\may12\Desktop\DojoAssignments\C#\Net\wedding_planner\obj\Debug\netcoreapp1.1\wedding_planner.AssemblyInfo.cs
+C:\Users\may12\Desktop\DojoAssignments\C#\Net\wedding_planner\obj\Debug\netcoreapp1.1\wedding_planner.dll
+C:\Users\may12\Desktop\DojoAssignments\C#\Net\wedding_planner\obj\Debug\netcoreapp1.1\wedding_planner.pdb
+C:\Users\Lena Orm\Desktop\DojoAssignments\C#\wedding_planner\bin\Debug\netcoreapp1.1\wedding_planner.deps.json
+C:\Users\Lena Orm\Desktop\DojoAssignments\C#\wedding_planner\bin\Debug\netcoreapp1.1\wedding_planner.runtimeconfig.json
+C:\Users\Lena Orm\Desktop\DojoAssignments\C#\wedding_planner\bin\Debug\netcoreapp1.1\wedding_planner.runtimeconfig.dev.json
+C:\Users\Lena Orm\Desktop\DojoAssignments\C#\wedding_planner\bin\Debug\netcoreapp1.1\wedding_planner.dll
+C:\Users\Lena Orm\Desktop\DojoAssignments\C#\wedding_planner\bin\Debug\netcoreapp1.1\wedding_planner.pdb
+C:\Users\Lena Orm\Desktop\DojoAssignments\C#\wedding_planner\obj\Debug\netcoreapp1.1\wedding_planner.AssemblyInfo.cs
+C:\Users\Lena Orm\Desktop\DojoAssignments\C#\wedding_planner\obj\Debug\netcoreapp1.1\wedding_planner.dll
+C:\Users\Lena Orm\Desktop\DojoAssignments\C#\wedding_planner\obj\Debug\netcoreapp1.1\wedding_planner.pdb

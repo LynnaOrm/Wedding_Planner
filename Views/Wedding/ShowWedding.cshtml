@@ -1,0 +1,15 @@
+<a href="/logout">Logout</a> | <a href="/Dashboard">Dashboard</a>
+
+<h1>@ViewBag.ShowOne.WedderOne & @ViewBag.ShowOne.WedderTwo 's Wedding</h1>
+
+<h3>Date: @ViewBag.ShowOne.DateOfEvent.ToString("dd MMM yyyy")</h3>
+
+<h3>Address: @ViewBag.ShowOne.Address</h3>
+
+<h4>Guests:</h4>
+
+@{
+    foreach(var guests in @ViewBag.ShowOne.RSVPS){
+        <p>@guests.User.FirstName @guests.User.LastName</p>
+    }
+}
